@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 1.5.0
+  version: "1.6.0"
 
 package:
   name: cppcheck-codequality
@@ -10,14 +10,14 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/c/cppcheck-codequality/cppcheck_codequality-${{ version }}.tar.gz
-    sha256: 17ed6822b84d361394c6892385c96e978f179cb6ef33254c459f95424ed25393
+    sha256: 88ecf0f77484b7cfced3a54d2b1a07c00e8f45bce37826c4ab8b52ae3ef71a26
     target_directory: dist
   - url: https://gitlab.com/ahogen/cppcheck-codequality/-/archive/v${{ version }}/cppcheck-codequality-v${{ version }}.tar.gz
-    sha256: 5a2046c0afb054babb1f43da660b268449c0a4882c7b3bea19f65b07710114d7
+    sha256: 55562fdae2e260cee8c50cd5542fe573a0a76d93f95fcad6338192aad65a373f
     target_directory: src
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - cd dist
